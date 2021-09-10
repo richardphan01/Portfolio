@@ -2,6 +2,7 @@ import "./intro.scss"
 import ArrowDropDownSharpIcon from '@material-ui/icons/ArrowDropDownSharp';
 import { init } from 'ityped'
 import { useEffect, useRef } from "react";
+import me from '../../assets/Me.jpg'
 
 
 export default function Intro() {
@@ -25,7 +26,8 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/Me.jpg" alt=""/>
+                    <img src={me} alt=""/>
+
                 </div>
             </div>
             <div className="right">
