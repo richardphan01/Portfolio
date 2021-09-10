@@ -35,10 +35,11 @@ export default function Intro() {
                     <h2>Hi There, I'm</h2>
                     <h1>Richard Phan</h1>
                     <h3>Software <span ref={textRef}></span></h3>
+                    <a href="#portfolio">
+                        <ArrowDropDownSharpIcon className="icon"/>
+                    </a>
                 </div>
-                <a href="#portfolio">
-                    <ArrowDropDownSharpIcon className="icon"/>
-                </a>
+               
             </div>
         </div>
     )
