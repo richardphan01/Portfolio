@@ -37,18 +37,6 @@ export default function Portfolio() {
                         alt=""
                         />
                 </div>
-                <div className="item">
-                    <img
-                        src =""
-                        alt=""
-                        />
-                </div>
-                <div className="item">
-                    <img
-                        src =""
-                        alt=""
-                        />
-                </div>
             </div>
             
         </div>
