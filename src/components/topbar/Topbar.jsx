@@ -20,7 +20,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 </div>
                 <div className="right">
                     <div className="itemContainer">
-                        <span><a href={Resume} target="_blank">Resume</a></span>
+                        <span><a href={Resume} target="blank">Resume</a></span>
                     </div>
                     <div className="hamburger" onClick={()=> setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
