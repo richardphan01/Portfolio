@@ -11,76 +11,41 @@ import {
 } from "../../data";
 
 export default function Portfolio() {
-    const [selected,setSelected] = useState("featured");
-    const [data,setData] = useState([]);
-    const list = [
-        {
-            id: "featured",
-            title: "Featured",
-        },
-        {
-            id: "ecommerce",
-            title: "Ecommerce Site",
-        },
-        {
-            id: "vchat",
-            title: "Video Chat App",
-        },
-        {
-            id: "tdlist",
-            title: "To-do List",
-        },
-        {
-            id: "game",
-            title: "Space Evade",
-        },
-    ];
-
-    useEffect(()=>{
-        
-        switch(selected){
-            case "featured":
-                setData(featuredPortfolio);
-                break;
-            case "ecommerce":
-                setData(ecommerceSite);
-                break;
-            case "vchat":
-                setData(videoChatApp);
-                break;
-            case "tdlist":
-                setData(toDoList);
-                break;
-            case "game":
-                setData(spaceEvade);
-                break;
-            default:
-                setData(featuredPortfolio);
-        }
-
-    },[selected]);
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>Projects</h1>
             <ul>
-                {list.map(item=>(
-                    <PortfolioList 
-                        title={item.title} 
-                        active={selected === item.id} 
-                        setSelected={setSelected}
-                        id={item.id}/>
-                ))}
+               
             </ul>
             <div className="container">
-                <div className="item">
-                    <img
-                        src ={d.img}
-                        alt=""
-                    />
-                    <h3>{d.title}</h3>
+                
+                <div className="tanMi">
+                   
+                    <h3>TanMi Spring Rolls</h3>
+                </div>
+                <div className="zoom">
+                   
+                    <h3>Zoom Clone</h3>
+                </div>
+                <div className="tdlist">
+                   
+                    <h3>To-do List</h3>
+                </div>
+                <div className="space">
+                   
+                    <h3>Space Evade</h3>
+                </div>
+                <div className="df">
+                   
+                    <h3>Deep-Focus</h3>
+                </div>
+                <div className="sca">
+                   
+                    <h3>Social Media App</h3>
                 </div>
             </div>
+            
             
         </div>
     )

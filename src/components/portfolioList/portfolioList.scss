@@ -6,6 +6,8 @@
     padding: 7px;
     border-radius: 10px;
     cursor: pointer;
+    border-color:$mainColor;
+    
 
     &.active{
         background-color: $mainColor;
